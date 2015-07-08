@@ -14,7 +14,7 @@
 // ***  Constructor  ***
 // *********************
 
-LCArmResp::LCArmResp(LCTools * MT_n)
+1LCArmResp::LCArmResp(LCTools * MT_n)
 {
 	MT = MT_n;
 #ifdef _DEBUG_ARMRESP_    
