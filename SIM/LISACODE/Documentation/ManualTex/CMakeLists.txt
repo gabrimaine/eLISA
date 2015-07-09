@@ -1,6 +1,6 @@
-include(UseLATEX)
+#include(UseLATEX)
 
-ADD_LATEX_DOCUMENT(Manual_v2.0.tex
+#ADD_LATEX_DOCUMENT(Manual_v2.0.tex
     IMAGE_DIRS Figures
     FORCE_PDF
 )
