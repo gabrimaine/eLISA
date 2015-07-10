@@ -30,4 +30,11 @@ target_link_libraries(LC2MeanFiles lisacode2main lisacode2armresp lisacode2detec
 add_executable(LC2ManipSensi "Exe/LISACODE-ManipSensitivity.cpp")
 target_link_libraries(LC2ManipSensi lisacode2main lisacode2armresp lisacode2detector lisacode2gw  lisacode2noise lisacode2obpm lisacode2orbits lisacode2tdi lisacode2toolbox lisacode2uso ${FFTW3_LIBRARIES} ${GSL_LIBRARIES})
 
-install(TARGETS LC2FIM LC2SNR LC2PSD LC2Sensitivty LISACode2 LC2SNRFIMMulti LC2MeanFiles LC2MCMC LC2SNRFIMMulti  LC2ManipSensi DESTINATION /usr/local/bin)
+install(TARGETS LC2FIM LC2SNR LC2PSD LC2Sensitivty LISACode2 LC2SNRFIMMulti LC2MeanFiles LC2MCMC LC2SNRFIMMulti LC2ManipSensi DESTINATION /usr/local/bin)
+
+install(FILES Exe/makeTDI-lisacode2.py DESTINATION /usr/local/bin)
+
+#ADD_CUSTOM_COMMAND(TARGET Exe/makeTDI-lisacode2.py POST_BUILD
+#    COMMAND ${CMAKE_COMMAND} -E copy
+#        "${CMAKE_CURRENT_BINARY_DIR}/Exe/makeTDI-lisacode2.py"
+#        "/usr/local/bin")
