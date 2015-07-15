@@ -1,5 +1,7 @@
 project(LISACode)
 cmake_minimum_required(VERSION 2.6)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/../../cmake/Modules)
+MESSAGE(STATUS “READING EXTERNAL MODULES FROM ${CMAKE_MODULE_PATH}”)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -19,5 +21,5 @@ add_subdirectory(OptBenPhaMet)
 add_subdirectory(Detector)
 add_subdirectory(TDI)
 add_subdirectory(Main)
-add_subdirectory(Documentation/ManualTex)
+#add_subdirectory(Documentation/ManualTex)
 
