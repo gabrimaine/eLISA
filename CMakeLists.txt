@@ -1,5 +1,5 @@
-project(SIM)
+project(eLISA_DPC)
 cmake_minimum_required(VERSION 2.6)
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/Modules)
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/Modules)
 MESSAGE(STATUS “${CMAKE_MODULE_PATH} READING CONFIGURATION”)
 add_subdirectory(SIM)
