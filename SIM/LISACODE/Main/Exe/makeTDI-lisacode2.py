@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 
 #import lisacode
-#comment to test automatical jenkins build 
+
 
 ################ Globales variables ################
 
