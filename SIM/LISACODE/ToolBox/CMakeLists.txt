@@ -2,7 +2,7 @@ project(ToolBox)
 INCLUDE_DIRECTORIES(Include)
 
 #file(GLOB_RECURSE ToolBox_SOURCES "Src/*.c*")
-find_library(M_LIB lm)
+find_library(M_LIB math)
 add_library (lisacode2toolbox 	Src/ezxml.c Src/randlib/randlib.c Src/randlib/com.c Src/randlib/linpack.c Src/LISACODE-Tools.cpp Src/LISACODE-Serie2.cpp Src/LISACODE-Vector.cpp Src/LISACODE-DataFileWrite.cpp Src/LISACODE-DataFileRead.cpp Src/LISACODE-EllipticFilter.cpp Src/LISACODE-Filter.cpp Src/LISACODE-Matrix.cpp)
 
 add_executable(LC2TestTools "Test/LISACODE-TestTools.cpp")
