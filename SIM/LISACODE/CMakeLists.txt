@@ -20,5 +20,5 @@ add_subdirectory(OptBenPhaMet)
 add_subdirectory(Detector)
 add_subdirectory(TDI)
 add_subdirectory(Main)
-add_subdirectory(Documentation/ManualTex)
+#add_subdirectory(Documentation/ManualTex)
 
